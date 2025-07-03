@@ -1026,7 +1026,7 @@ export const games: Game[] = [
     tags: ["Puzzle"],
     iconUrl: "https://raw.githubusercontent.com/callmeianwu/Enhanced-Tetris/main/samp-img.png",
     thumbnailUrl: "https://raw.githubusercontent.com/callmeianwu/Enhanced-Tetris/main/samp-img.png",
-    playUrl: "http://localhost:3000/games/tetris/index.html",
+    playUrl: `${process.env.NEXT_PUBLIC_BASE_URL}/games/tetris/index.html`,
     publishedTime: "2016-03-30T00:00:00Z",
     publisherName: "",
     active: true,
