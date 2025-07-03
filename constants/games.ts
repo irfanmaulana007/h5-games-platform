@@ -1026,7 +1026,7 @@ export const games: Game[] = [
     tags: ["Puzzle"],
     iconUrl: "https://raw.githubusercontent.com/callmeianwu/Enhanced-Tetris/main/samp-img.png",
     thumbnailUrl: "https://raw.githubusercontent.com/callmeianwu/Enhanced-Tetris/main/samp-img.png",
-    playUrl: `${process.env.NEXT_PUBLIC_BASE_URL}/games/tetris/index.html`,
+    playUrl: `${process.env.NEXT_PUBLIC_APP_URL}/games/tetris/index.html`,
     publishedTime: "2016-03-30T00:00:00Z",
     publisherName: "",
     active: true,
@@ -1049,6 +1049,40 @@ export const games: Game[] = [
       ageRating: "Everyone",
     },
   },
+  {
+    slug: "angry-birds",
+    name: "Angry Birds",
+    title: "Angry Birds",
+    isInternal: true,
+    description:
+      "Angry Birds is a classic puzzle game where you rotate and move falling blocks to create horizontal lines. Clear lines to score points and progress to higher levels. Challenge yourself to master the game!",
+    category: "Casual",
+    tags: ["Casual"],
+    iconUrl: "https://dgkanatsios.com/wp-content/uploads/2014/07/image_thumb6_6357f865.png?w=809",
+    thumbnailUrl: "https://dgkanatsios.com/wp-content/uploads/2014/07/image_thumb5_49132f86.png",
+    playUrl: `${process.env.NEXT_PUBLIC_APP_URL}/games/angry-birds/index.html`,
+    publishedTime: "2016-03-30T00:00:00Z",
+    publisherName: "",
+    active: true,
+    staticContent: {
+      backgroundUrl: "",
+      logoUrl: "",
+      bannerUrl: "",
+    },
+    media: {
+      videos: [""],
+      images: [""],
+    },
+    gameMetadata: {
+      version: "1.0",
+      minPlayerCount: 1,
+      maxPlayerCount: 1,
+      releaseDate: "2016-03-30T00:00:00Z",
+      supportedDevices: ["Web", "Mobile"],
+      genres: ["Casual", "Singleplayer"],
+      ageRating: "Everyone",
+    },
+  }
 ];
 
 export const getGameByName = (name: string): Game | undefined => {
